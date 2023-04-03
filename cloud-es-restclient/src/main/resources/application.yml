@@ -1,0 +1,23 @@
+server:
+  port: 8848
+
+spring:
+  application:
+    name: es
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource               #数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver                #mysql驱动包
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: linjf.0529
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: org.linjf.es.entity     #所有Entity别名类所在包
+
+logging:
+  level:
+    com.linjf: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+

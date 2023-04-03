@@ -1,0 +1,56 @@
+server:
+  port: 7071
+
+spring:
+  application:
+    name: orderservice
+  rabbitmq:
+    host: localhost # rabbitMQ的ip地址
+    port: 5677 # 端口
+    username: admin
+    password: linjf0529
+    virtual-host: /
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848    #nacos的服务地址,多个nacos用逗号(,)分割`
+        cluster-name: SH             #设置nacos的集群属性
+        namespace: ac833fd0-1d74-4d67-a1e7-89b47af9c9e1   #命名空间,实现nacos的环境隔离
+        ephemeral: true        #是否是临时实例,如果修改失败需要删除(nacos目录下\data\protocol\raft)里面的应用实例元数据信息
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      web-context-unify: false   #关闭资源整合
+      eager: true #开启对sentinel看板的饥饿式加载。sentinel默认是懒加载机制，只有访问过一次的资源才会被监控，通过关闭懒加载，在项目启动时就连接sentinel控制台
+    loadbalancer:
+      retry:
+        enabled: false
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource               #数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver                #mysql驱动包
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: linjf.0529
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: org.linjf.cloud.entity     #所有Entity别名类所在包
+
+feign:
+  sentinel:
+    enabled: true # 开启feign对sentinel的支持
+  httpclient:
+    enabled: true                    #开启httpclient
+    max-connections: 200             #最大连接数
+    max-connections-per-route: 50    #单个路径的最大连接数
+  client:
+    config:
+      default:              #default:默认所有服务,可以写服务命指定单个服务的
+        connectTimeout: 100 #单位 ms
+        readTimeout: 100    #单位 ms
+        loggerLevel: FULL   #feign的日志基别
+logging:
+  level:
+    com.linjf: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+

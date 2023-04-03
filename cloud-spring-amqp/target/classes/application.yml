@@ -1,0 +1,10 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    host: 101.34.55.153 # rabbitMQ的ip地址
+    port: 5677 # 端口
+    username: admin
+    password: linjf0529
+    virtual-host: /
