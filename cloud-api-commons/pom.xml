@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-commons</artifactId>
+    <artifactId>cloud-api-commons</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

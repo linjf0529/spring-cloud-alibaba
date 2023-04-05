@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>com.linjf.cloud</groupId>
-            <artifactId>spring-cloud-commons</artifactId>
+            <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
         <!--Spring Cloud 2020版本以后，默认移除了对Netflix的依赖，其中就包括Ribbon，官方默认推荐使用Spring Cloud Loadbalancer正式替换Ribbon，并成为了Spring Cloud负载均衡器的唯一实现。-->
