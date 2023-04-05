@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author linjf
  * @create 2023/3/17 6:25
- * @company 厦门熙重电子科技有限公司
+ 
  */
 @Slf4j
 @Component

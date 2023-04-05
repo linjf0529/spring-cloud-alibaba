@@ -14,7 +14,6 @@ public class ResponseResult<T> {
     private String message;
     //响应对象
     private T result;
-
     public ResponseResult(Integer code) {
         this.code = code;
     }

@@ -12,7 +12,6 @@ import reactor.core.publisher.Mono;
 /**
  * @author linjf
  * @create 2023/3/6 17:38
- * @company 厦门熙重电子科技有限公司
  */
 @Component
 public class AuthorizeFilter implements GlobalFilter, Ordered {

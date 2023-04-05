@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @author linjf
  * @create 2023/3/6 15:58
- * @company 厦门熙重电子科技有限公司
+ 
  */
 @SpringBootApplication
 public class GatewayApplication10010 {

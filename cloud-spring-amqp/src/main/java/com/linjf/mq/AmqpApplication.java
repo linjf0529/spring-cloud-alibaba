@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 /**
  * @author linjf
  * @create 2023/3/6 21:01
- * @company 厦门熙重电子科技有限公司
  */
 @SpringBootApplication
 public class AmqpApplication {

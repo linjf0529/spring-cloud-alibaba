@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author linjf
  * @create 2023/3/6 16:58
- * @company 厦门熙重电子科技有限公司
+ 
  */
 @Data
 @Configuration

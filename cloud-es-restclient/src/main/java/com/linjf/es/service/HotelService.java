@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * @author linjf
  * @create 2023/3/15 5:05
- * @company 厦门熙重电子科技有限公司
  */
 public interface HotelService {
     /**

@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 /**
  * @author linjf
  * @create 2023/3/4 0:20
- * @company 厦门熙重电子科技有限公司
+ 
  */
 @Slf4j
 @RestController
